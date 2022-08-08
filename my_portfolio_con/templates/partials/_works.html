@@ -1,0 +1,9 @@
+<section class="resume-section" id="interests">
+    <div class="resume-section-content text-center">
+        <h2 class="mb-5 m-12 text-center">MY WORKS</h2>
+        {% for work in works reversed %}
+            <img onclick="{{work.name}}()" class="{{work.name}}" src="{{work.image.url}}"
+                 style="margin:10px; width: 240px; border:2px solid gray" alt="{{work.name}}">
+        {% endfor %}
+       </div>
+</section>

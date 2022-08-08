@@ -1,0 +1,26 @@
+{% load static %}
+<section class="resume-section" id="about">
+    <main class="resume-section-content text-center">
+        <h1 class="mb-0">
+            Enes
+            <span class="text-primary">Derin</span>
+        </h1>
+        <div class="bolder mt-4 mb-5">
+            Bayrampaşa/İstanbul · <a href="tel:05469705451"> 0546 970 54 51 </a>· <br>
+            <a href="mailto:enesenesder99@gmail.com">enesenesder99@email.com</a>
+        </div>
+        {% for blog in abouts %}
+            <p class="lead mb-5">{{blog.about|safe}}
+            </p>
+        {% endfor %}
+        <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/enes-derin/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/Enesderin0" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://app.patika.dev/enesderin" target="_blank"><img
+                    style="width: 65px; margin-left: 5px;" src={% static 'assets/patika.png' %} alt="">
+            </a>
+        </div>
+    </main>
+</section>       

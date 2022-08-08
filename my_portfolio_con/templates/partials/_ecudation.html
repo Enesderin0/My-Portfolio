@@ -1,0 +1,16 @@
+<section class="resume-section" id="education">
+    <main class="resume-section-content">
+        <h2 class="mb-5 text-center">Education</h2>
+        {% for information in education reversed %}
+            <section class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0 mt-3">{{information.school}}</h3>
+                    <div class="subheading mb-2">{{information.branch}}</div>
+                </div>
+                <div id="education-date" class="flex-shrink-0 flex-md mb-4 mt-3"><span class="text-primary mb-3">
+                    {{information.date}}
+                </span></div>
+            </section><hr>
+        {% endfor %}
+    </main>
+</section> 

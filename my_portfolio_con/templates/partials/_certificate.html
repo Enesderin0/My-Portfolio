@@ -1,0 +1,13 @@
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <h2 class="mb-5 text-center">Certifications</h2>
+        <ul class="fa-ul mb-0">
+        {% for certificate in certificates %}
+            <li class="text-dark">
+                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+               <a class="text-dark" target="_blank" style="text-decoration:none;" href="{{certificate.url}}">{{certificate.certificate}}</a><br><span class="text-danger"><sub>{{certificate.date}}</span>
+            </li><hr>
+        {% endfor %}
+        </ul>
+    </div>
+</section>  

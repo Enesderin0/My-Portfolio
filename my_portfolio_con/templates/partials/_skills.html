@@ -1,0 +1,15 @@
+<section class="resume-section" id="skills">
+    <div class="resume-section-content">
+        <h2 class="mb-5 text-center">Skills</h2>
+        <main class="">
+           {% for skill in skills %}
+                <p style="margin-bottom: 0;">{{skill.skill}}</p>
+                <div class="progress " style="background: grey;">
+                    <div class="progress-bar progress-bar-striped {{skill.color}}" role="progressbar" style="width: {{skill.degree}}%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+           {% endfor %}
+           
+        </main>
+    </div>
+</section>
